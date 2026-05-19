@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TFC_RelevosFamiliares.Pages.Contacto"
+             Title="Contacto">
+
+	<ScrollView>
+		<VerticalStackLayout Padding="20" Spacing="25">
+			<!-- Logo -->
+			<Image Source="{AppThemeBinding Light='rf_logo.png', Dark='rf_logo_dark.png'}"
+				   Margin="0,50,0,30"
+				   HeightRequest="200"
+				   Aspect="AspectFit"
+				   SemanticProperties.Description="App Logo" />
+
+			<!-- Título -->
+			<Label Text="Contacto"
+				   Margin="0,0,0,50"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+			<!-- Nombre -->
+			<Label Text="Verónica Herrera"
+				   Margin="50,0,0,5"
+                   FontSize="24"/>
+
+			<!-- Teléfono -->
+			<Label Text="Teléfono: 624 15 13 83"
+				   Margin="50,0,0,0"
+                   FontSize="18"/>
+
+			<!-- Email -->
+			<Label Text="Email: info@relevosfamiliares.com"
+                   FontSize="18"
+                   Margin="50,0,0,0"/>
+			
+			<!-- Botón para volver a la pantalla de inicio -->
+			<Button
+                Text="Volver al inicio"
+				FontSize="18"
+                Margin="90,30"
+                CornerRadius="10"
+				BorderWidth="2"
+                Clicked="OnVolverTapped"/>
+		</VerticalStackLayout>
+	</ScrollView>
+	
+	
+    <!-- 
+	
+	<VerticalStackLayout Padding="30" Spacing="20">
+        <Label Text="Contacto"
+               FontSize="28"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center" />
+        <Label Text="Información de contacto"
+               FontSize="16"
+               HorizontalTextAlignment="Center"
+               Opacity="0.7" />
+    </VerticalStackLayout>
+	
+	-->
+</ContentPage>

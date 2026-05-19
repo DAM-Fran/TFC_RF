@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TFC_RelevosFamiliares.Pages.HorasAcompanamiento"
+             Title="Acompañamiento a consulta">
+
+    <VerticalStackLayout Padding="30,0,30,40"
+                         Spacing="30"
+                         VerticalOptions="Center">
+
+        <Image Source="{AppThemeBinding Light='rf_logo.png', Dark='rf_logo_dark.png'}"
+               HeightRequest="150"
+               Aspect="AspectFit" />
+
+        <Label Text="Elige hora"
+               FontSize="28"
+               FontAttributes="Bold"
+               Margin="0,0,0,5"
+               HorizontalTextAlignment="Center" />
+
+        <Grid Padding="30,0,30,40"
+              RowDefinitions="Auto,Auto,Auto"
+              ColumnDefinitions="*,*"
+              RowSpacing="20"
+              ColumnSpacing="20">
+
+            <!-- Fila 1 -->
+            <Button Text="8:00 - 9:00"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    CornerRadius="10"
+                    BorderWidth="2"
+                    Clicked="OnHoraClicked" />
+
+            <Button Text="9:00 - 10:00"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    CornerRadius="10"
+                    BorderWidth="2"
+                    Clicked="OnHoraClicked" />
+
+            <!-- Fila 2 -->
+            <Button Text="10:00 - 11:00"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    CornerRadius="10"
+                    BorderWidth="2"
+                    Clicked="OnHoraClicked" />
+
+            <Button Text="11:00 - 12:00"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    CornerRadius="10"
+                    BorderWidth="2"
+                    Clicked="OnHoraClicked" />
+
+            <!-- Fila 3 -->
+            <Button Text="12:00 - 13:00"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    CornerRadius="10"
+                    BorderWidth="2"
+                    Clicked="OnHoraClicked" />
+
+            <Button Text="13:00 - 14:00"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    CornerRadius="10"
+                    BorderWidth="2"
+                    Clicked="OnHoraClicked" />
+
+        </Grid>
+
+    </VerticalStackLayout>
+
+</ContentPage>

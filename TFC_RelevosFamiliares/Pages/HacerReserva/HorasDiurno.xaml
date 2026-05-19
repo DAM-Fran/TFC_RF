@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TFC_RelevosFamiliares.Pages.HorasDiurno"
+             Title="Servicio diurno">
+
+    <VerticalStackLayout Padding="30,0,30,40"
+                         Spacing="30"
+                         VerticalOptions="Center">
+
+        <Image Source="{AppThemeBinding Light='rf_logo.png', Dark='rf_logo_dark.png'}"
+               HeightRequest="150"
+               Aspect="AspectFit" />
+
+        <Label Text="Elige hora"
+               FontSize="28"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center" />
+
+        <Button Text="Horas sueltas"
+                CornerRadius="10"
+                BorderWidth="2"
+                Clicked="OnHoraClicked" />
+
+        <Button Text="De 8:00 a 15:00"
+                CornerRadius="10"
+                BorderWidth="2"
+                Clicked="OnHoraClicked" />
+
+        <Button Text="De 15:00 a 22:00"
+                CornerRadius="10"
+                BorderWidth="2"
+                Clicked="OnHoraClicked" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

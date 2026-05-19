@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Route="splash" -->
+<Shell
+    x:Class="TFC_RelevosFamiliares.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:TFC_RelevosFamiliares"
+    Title="TFC_RelevosFamiliares"
+    >
+
+    <ShellContent
+        Title="Splash"
+        ContentTemplate="{DataTemplate local:Pages.SplashScreen}"
+        Route="splash" />
+
+    <ShellContent
+        Title="Login"
+        ContentTemplate="{DataTemplate local:Pages.Login}"
+        Route="login" />
+
+    <ShellContent
+        Title="Register"
+        ContentTemplate="{DataTemplate local:Pages.Register}"
+        Route="register" />
+
+    <ShellContent
+        Title="Home"
+        ContentTemplate="{DataTemplate local:Pages.Home}"
+        Route="home" />
+
+
+
+
+    <ShellContent
+        Title="Calendario"
+        ContentTemplate="{DataTemplate local:Pages.Calendario}"
+        Route="calendario" />
+
+    <ShellContent
+        Title="Tipo de Reserva"
+        ContentTemplate="{DataTemplate local:Pages.TipoReserva}"
+        Route="tipoReserva" />
+
+    <ShellContent
+        Title="Horas Servicio Diurno"
+        ContentTemplate="{DataTemplate local:Pages.HorasDiurno}"
+        Route="horasDiurno" />
+
+    <ShellContent
+        Title="Horas Sueltas Diurno"
+        ContentTemplate="{DataTemplate local:Pages.HorasSueltasDiurno}"
+        Route="horasSueltasDiurno" />
+
+    <ShellContent
+        Title="Horas Servicio Nocturno"
+        ContentTemplate="{DataTemplate local:Pages.HorasNocturno}"
+        Route="horasNocturno" />
+
+    <ShellContent
+        Title="Horas Sueltas Nocturno"
+        ContentTemplate="{DataTemplate local:Pages.HorasSueltasNocturno}"
+        Route="horasSueltasNocturno" />
+
+    <ShellContent
+        Title="Horas Acompañamiento"
+        ContentTemplate="{DataTemplate local:Pages.HorasAcompanamiento}"
+        Route="horasConsulta" />
+
+    <ShellContent
+        Title="Confirmar Reserva"
+        ContentTemplate="{DataTemplate local:Pages.ConfirmarReserva}"
+        Route="confirmarReserva" />
+
+    <ShellContent
+        Title="Reserva Solicitada"
+        ContentTemplate="{DataTemplate local:Pages.ReservaSolicitada}"
+        Route="reservaSolicitada" />
+
+
+
+
+    <ShellContent
+        Title="Mis Reservas"
+        ContentTemplate="{DataTemplate local:Pages.MisReservas}"
+        Route="misreservas" />
+
+    <ShellContent
+    Title="Mis Reservas (vacío)"
+    ContentTemplate="{DataTemplate local:Pages.MisReservasVacio}"
+    Route="misreservasvacio" />
+
+    <ShellContent
+    Title="Confirmar Cancelación"
+    ContentTemplate="{DataTemplate local:Pages.ConfirmarCancelacion}"
+    Route="confirmarCancelacion" />
+
+    <ShellContent
+    Title="Reserva Cancelada"
+    ContentTemplate="{DataTemplate local:Pages.CancelacionRealizada}"
+    Route="cancelacionRealizada" />
+
+    <ShellContent
+        Title="Contacto"
+        ContentTemplate="{DataTemplate local:Pages.Contacto}"
+        Route="contacto" />
+
+
+
+
+    <!-- EMPLEADO -->
+
+    <ShellContent
+    Title="Inicio Empleado"
+    ContentTemplate="{DataTemplate local:Pages.EmpleadoInicio}"
+    Route="empleadoinicio" />
+
+    <ShellContent
+    Title="Aceptar un servicio"
+    ContentTemplate="{DataTemplate local:Pages.Empleado.AceptarServicios.EmpleadoAceptarServicio}"
+    Route="empleadoaceptarservicio" />
+
+    <ShellContent
+    Title="Confirmar servicio"
+    ContentTemplate="{DataTemplate local:Pages.Empleado.AceptarServicios.EmpleadoConfirmarServicio}"
+    Route="empleadoconfirmarservicio" />
+
+    <ShellContent
+    Title="Servicio aceptado"
+    ContentTemplate="{DataTemplate local:Pages.Empleado.AceptarServicios.EmpleadoServicioAceptado}"
+    Route="empleadoservicioaceptado" />
+
+    <ShellContent
+    Title="Mis servicios"
+    ContentTemplate="{DataTemplate local:Pages.Empleado.MisServicios.EmpleadoMisServicios}"
+    Route="empleadomisservicios" />
+
+    <ShellContent
+    Title="Confirmar cancelación"
+    ContentTemplate="{DataTemplate local:Pages.Empleado.MisServicios.EmpleadoConfirmarCancelacion}"
+    Route="empleadoconfirmarcancelacion" />
+
+    <ShellContent
+    Title="Cancelación realizada"
+    ContentTemplate="{DataTemplate local:Pages.Empleado.MisServicios.EmpleadoCancelacionRealizada}"
+    Route="empleadocancelacionrealizada" />
+
+    <ShellContent
+    Title="Sin servicios"
+    ContentTemplate="{DataTemplate local:Pages.Empleado.EmpleadoSinServicios}"
+    Route="empleadosinservicios" />
+
+
+
+
+
+    <!-- Botón de modo oscuro en el menú lateral -->
+    <MenuItem
+        Text="Modo oscuro"
+        Clicked="OnThemeClicked" />
+
+</Shell>

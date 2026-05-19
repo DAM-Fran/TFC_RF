@@ -1,0 +1,31 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TFC_RelevosFamiliares.Pages.Calendario"
+             Title="Selecciona fecha">
+
+    <VerticalStackLayout Padding="20" Spacing="30">
+
+        <Image Source="{AppThemeBinding Light='rf_logo.png', Dark='rf_logo_dark.png'}"
+               HeightRequest="150"
+               HorizontalOptions="Center" />
+
+        <Label Text="Selecciona la fecha de tu reserva"
+               FontSize="22"
+               HorizontalOptions="Center"
+               FontAttributes="Bold"/>
+
+        <DatePicker x:Name="FechaPicker"
+                    Format="dd/MM/yyyy"
+                    MinimumDate="{x:Static sys:DateTime.Today}"
+                    MaximumDate="{x:Static sys:DateTime.MaxValue}"
+                    HorizontalOptions="Center"/>
+
+        <Button Text="Continuar"
+                Margin="40,20"
+                CornerRadius="10"
+                BorderWidth="2"
+                Clicked="OnContinuarClicked"/>
+
+    </VerticalStackLayout>
+
+</ContentPage>

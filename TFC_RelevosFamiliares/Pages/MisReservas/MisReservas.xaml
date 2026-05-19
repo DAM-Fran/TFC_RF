@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TFC_RelevosFamiliares.Pages.MisReservas"
+             Title="Mis Reservas">
+
+    <VerticalStackLayout Padding="30" Spacing="20">
+
+        <Image
+    Source="{AppThemeBinding Light='rf_logo.png', Dark='rf_logo_dark.png'}"
+    HeightRequest="150"
+    Aspect="AspectFit"
+	Margin="0,10,0,40"
+    SemanticProperties.Description="App Logo" />
+
+        <Label Text="Mis Reservas"
+               FontSize="28"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center" />
+
+        <CollectionView x:Name="ListaReservas"
+                        SelectionMode="None">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Padding="15"
+                           Margin="0,10"
+                           BorderColor="#CCCCCC"
+                           CornerRadius="12">
+
+                        <VerticalStackLayout Spacing="6">
+
+                            <Label Text="{Binding Fecha}"
+                                   FontAttributes="Bold"
+                                   FontSize="18" />
+
+                            <Label Text="{Binding Hora}"
+                                   FontSize="16" />
+
+                            <Label Text="{Binding Tipo}"
+                                   FontSize="16"
+                                   Opacity="0.7" />
+
+                            <Button Text="Cancelar"
+                                    BackgroundColor="#D32F2F"
+                                    TextColor="White"
+                                    CornerRadius="10"
+                                    Clicked="OnCancelarClicked" />
+
+                        </VerticalStackLayout>
+
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+    </VerticalStackLayout>
+
+</ContentPage>
+
+
+
+
+
+
+
+<!--
+    
+    <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TFC_RelevosFamiliares.Pages.MisReservas"
+             Title="Mis Reservas">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <Label Text="Mis Reservas"
+               FontSize="28"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center" />
+
+        <CollectionView x:Name="ListaReservas">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Padding="15" Margin="0,10" BorderColor="#ccc" CornerRadius="10">
+
+                        <VerticalStackLayout Spacing="5">
+
+                            <Label Text="{Binding Fecha}" FontAttributes="Bold" />
+                            <Label Text="{Binding Hora}" />
+                            <Label Text="{Binding Tipo}" />
+
+                            <Button Text="Cancelar"
+                                    BackgroundColor="#D32F2F"
+                                    TextColor="White"
+                                    Clicked="OnCancelarClicked" />
+
+                        </VerticalStackLayout>
+
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </VerticalStackLayout>
+</ContentPage>
+
+    
+    -->

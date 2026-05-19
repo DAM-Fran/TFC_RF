@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TFC_RelevosFamiliares.Pages.HorasSueltasDiurno"
+             Title="Horas sueltas (diurno)">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30,0,30,40"
+                             Spacing="20">
+
+            <Image Source="{AppThemeBinding Light='rf_logo.png', Dark='rf_logo_dark.png'}"
+                   HeightRequest="150"
+                   Aspect="AspectFit" />
+
+            <Label Text="Selecciona horas"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center" />
+
+            <VerticalStackLayout x:Name="HorasContainer"
+                                 Spacing="10" />
+
+            <Button Text="Continuar"
+                    CornerRadius="10"
+                    BorderWidth="2"
+                    Margin="0,20,0,0"
+                    Clicked="OnContinuarClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

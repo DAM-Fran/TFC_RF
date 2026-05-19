@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TFC_RelevosFamiliares.Pages.Empleado.AceptarServicios.EmpleadoConfirmarServicio"
+             Title="Confirmar servicio">
+
+    <VerticalStackLayout Padding="30,0,30,40"
+                         Spacing="30"
+                         VerticalOptions="Center">
+
+        <Image Source="{AppThemeBinding Light='rf_logo.png', Dark='rf_logo_dark.png'}"
+               HeightRequest="150"
+               Aspect="AspectFit" />
+
+        <Label Text="Está a punto de confirmar el siguiente servicio:"
+               FontSize="20"
+               HorizontalTextAlignment="Center"
+               Margin="0,0,0,20" />
+
+        <Label x:Name="FechaLabel"
+               FontSize="20"
+               HorizontalTextAlignment="Center" />
+
+        <Label x:Name="HoraLabel"
+               FontSize="20"
+               HorizontalTextAlignment="Center" />
+
+        <Label x:Name="TipoLabel"
+               FontSize="20"
+               HorizontalTextAlignment="Center" />
+
+        <Button Text="Confirmar"
+                CornerRadius="10"
+                BorderWidth="2"
+                Margin="40,20"
+                Clicked="OnConfirmarClicked" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

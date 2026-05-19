@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TFC_RelevosFamiliares.Pages.MisReservasVacio"
+             Title="Mis Reservas">
+
+    <VerticalStackLayout Padding="30" Spacing="25">
+
+        <Image Source="{AppThemeBinding Light='rf_logo.png', Dark='rf_logo_dark.png'}"
+	   Margin="0,50,0,30"
+	   HeightRequest="200"
+	   Aspect="AspectFit"
+	   SemanticProperties.Description="App Logo" />
+
+        <Label Text="No hay reservas"
+               FontSize="28"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center" />
+
+        <Label Text="Aún no has hecho ninguna reserva"
+               FontSize="16"
+               Margin="0,0,0,40"
+               HorizontalTextAlignment="Center"
+               Opacity="0.7" />
+
+        <Button Text="Volver al inicio"
+                HorizontalOptions="Center"
+                WidthRequest="200"
+                CornerRadius="10"
+                BorderWidth="2"
+                Clicked="OnVolverClicked" />
+
+        <Button Text="Empezar a reservar"
+                HorizontalOptions="Center"
+                WidthRequest="200"
+                CornerRadius="10"
+                BorderWidth="2"
+                Clicked="OnReservarClicked" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

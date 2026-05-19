@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TFC_RelevosFamiliares.Pages.TipoReserva"
+             Title="Tipo de Reserva">
+
+    <VerticalStackLayout Padding="30,0,30,90" Spacing="30" VerticalOptions="Center">
+
+        <Image
+            Source="{AppThemeBinding Light='rf_logo.png', Dark='rf_logo_dark.png'}"
+            HeightRequest="150"
+            Aspect="AspectFit"
+            Margin="0,0,0,20"
+            SemanticProperties.Description="App Logo" />
+
+        <Label Text="Elige tipo de reserva"
+               FontSize="28"
+               FontAttributes="Bold"
+               Margin="0,0,0,10"
+               HorizontalTextAlignment="Center" />
+
+        <Button
+            Text="Servicio diurno"
+            CornerRadius="10"
+            BorderWidth="2"
+            Clicked="OnDiurnoClicked" />
+
+        <Button
+            Text="Servicio nocturno"
+            CornerRadius="10"
+            BorderWidth="2"
+            Clicked="OnNocturnoClicked" />
+
+        <Button
+            Text="Acompañamiento a consulta"
+            CornerRadius="10"
+            BorderWidth="2"
+            Clicked="OnConsultaClicked" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

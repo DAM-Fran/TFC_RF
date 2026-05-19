@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TFC_RelevosFamiliares.Pages.Empleado.MisServicios.EmpleadoConfirmarCancelacion"
+             Title="Cancelar servicio">
+
+    <VerticalStackLayout Padding="30" Spacing="25">
+
+        <Image Source="{AppThemeBinding Light='rf_logo.png', Dark='rf_logo_dark.png'}"
+               Margin="0,50,0,30"
+               HeightRequest="200"
+               Aspect="AspectFit" />
+
+        <Label Text="¿Seguro que quiere cancelar?"
+               FontSize="24"
+               FontAttributes="Bold"
+               HorizontalTextAlignment="Center" />
+
+        <Button Text="Cancelar servicio"
+                CornerRadius="10"
+                HeightRequest="45"
+                Clicked="OnCancelarDefinitivo" />
+
+        <Button Text="Volver atrás"
+                CornerRadius="10"
+                HeightRequest="45"
+                Clicked="OnVolverClicked" />
+
+    </VerticalStackLayout>
+
+</ContentPage>
